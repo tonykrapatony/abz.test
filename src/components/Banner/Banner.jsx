@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./Banner.module.scss";
 import Button from "../Button/Button";
-import banner360 from '../../assets/img/banner360.png';
-import banner768 from '../../assets/img/banner768.png';
-import banner1024 from '../../assets/img/banner1024.png';
-import banner1170 from '../../assets/img/banner1170.png';
+import banner360 from '../../assets/img/banner360.webp';
+import banner768 from '../../assets/img/banner768.webp';
+import banner1024 from '../../assets/img/banner1024.webp';
+import banner1170 from '../../assets/img/banner1170.webp';
 
 
 export default function Banner() {
