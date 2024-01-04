@@ -21,7 +21,12 @@ module.exports = {
       spacing: {
         16: '16px',
         26: '26px',
+        70: '70px',
         104: '104px',
+        282: '282px',
+        328: '328px',
+        344: '344px',
+        370: '370px',
       },
       fontSize: {
         sm: '12px',
@@ -43,6 +48,7 @@ module.exports = {
       },
       width: {
         '104px': '104px',
+        '70px': '70px',
       },
       borderRadius: {
         '10px': '10px',

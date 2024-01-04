@@ -1,19 +1,19 @@
 .user_item {
-    @apply max-w-[328px] w-full flex flex-col items-center gap-[20px] p-[20px] text-black bg-white rounded-10px;
+    @apply max-w-328 w-full flex flex-col items-center gap-5 p-5 text-black bg-white rounded-10px;
     @media (min-width: 768px) {
-        @apply max-w-[344px] mx-0;
+        @apply max-w-344 mx-0;
     }
     @media (min-width: 1024px) {
-        max-width: 282px;
+        @apply max-w-282;
     }
     @media (min-width: 1290px) {
-        max-width: 370px;
+        @apply max-w-370;
     }
     .name {
         @apply w-full truncate text-center;
     }
     .img_wrapper {
-        @apply w-[70px] h-[70px] rounded-full overflow-hidden;
+        @apply w-70px h-70 rounded-full overflow-hidden;
         img {
             @apply w-full h-full;
         }
