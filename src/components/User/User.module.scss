@@ -13,7 +13,7 @@
         @apply w-full truncate text-center;
     }
     .img_wrapper {
-        @apply w-70px h-70 rounded-full overflow-hidden;
+        @apply w-70 h-70 rounded-full overflow-hidden;
         img {
             @apply w-full h-full;
         }

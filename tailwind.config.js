@@ -19,14 +19,27 @@ module.exports = {
     },
     extend: {
       spacing: {
+        7: '7px',
         16: '16px',
         26: '26px',
+        34: '34px',
+        54: '54px',
         70: '70px',
+        77: '77px',
+        83: '83px',
+        100: '100px',
         104: '104px',
+        140: '140px',
+        254: '254px',
         282: '282px',
+        297: '297px',
         328: '328px',
         344: '344px',
         370: '370px',
+        380: '380px',
+        704: '704px',
+        904: '904px',
+        1170: '1170px',
       },
       fontSize: {
         sm: '12px',
@@ -42,17 +55,28 @@ module.exports = {
         nunito: '"Nunito", sans-serif'
       },
       padding: {
+        '3px': '3px',
+        '5px': '5px',
         '60px': '60px',
         '13px': '13px',
+        '18px': '18px',
+        '19px': '19px',
         '71px': '71px'
-      },
-      width: {
-        '104px': '104px',
-        '70px': '70px',
       },
       borderRadius: {
         '10px': '10px',
-      }
+        '80px': '80px',
+      },
+      gap: {
+        '7': '7px',
+        '21': '21px',
+        '29': '29px',
+        '50': '50px',
+        '140': '140px',
+      },
+      content: {
+        'empty': '',
+      },
     },
     corePlugins: {
       textOpacity: false,

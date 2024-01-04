@@ -1,7 +1,7 @@
 .banner {
     @apply relative w-full;
     .img_wrapper {
-        @apply absolute top-0 left-0 z-[-1] w-full h-full;
+        @apply absolute top-0 left-0 -z-10 w-full h-full;
         img {
             @apply h-full w-full
         }
@@ -17,9 +17,9 @@
             padding-bottom: 163px;
         }
         .text_content {
-            @apply w-[328px] flex flex-col items-center gap-[21px] text-white text-center;
+            @apply w-328 flex flex-col items-center gap-21 text-white text-center;
             @media (min-width: 768px) {
-                width: 380px;
+                @apply w-380;
             }
         }
     }

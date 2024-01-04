@@ -7,10 +7,10 @@
         @apply px-60px;
     }
     @media (min-width: 1290px) {
-        @apply max-w-[1170px] px-0 mx-auto;
+        @apply max-w-1170 px-0 mx-auto;
     }
     .logo {
-        @apply w-104px h-26;
+        @apply w-104 h-26;
     }
     .actions {
         @apply flex justify-between items-center gap-2.5;

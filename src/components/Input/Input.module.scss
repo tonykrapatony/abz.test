@@ -4,22 +4,22 @@
         opacity: 0;
     }
     .input {
-        @apply w-[328px] h-[54px] py-[14px] pl-4 bg-lightGray border border-inputBorder rounded outline-none;
+        @apply w-328 h-54 py-3.5 pl-4 bg-lightGray border border-inputBorder rounded outline-none;
         &.input_error {
             @apply border-error border-2;
         }
         &:focus + .label {
-            @apply top-0 p-[5px] bg-lightGray leading-14 text-sm;
+            @apply top-0 p-5px bg-lightGray leading-14 text-sm;
         }
         &:not(:placeholder-shown) + label {
-            @apply top-0 leading-14 p-[5px] bg-lightGray text-sm;
+            @apply top-0 leading-14 p-5px bg-lightGray text-sm;
         }
         @media (min-width: 768px) {
-            width: 380px;
+            @apply w-380;
         }
     }
     .label {
-        @apply absolute left-[10px] top-[50%] pl-[6px] translate-y-[-50%] text-inputColor;
+        @apply absolute left-2.5 top-1/2 pl-1.5 -translate-y-1/2 text-inputColor;
         &.label_error {
             @apply text-error;
         }
@@ -32,20 +32,21 @@
     }
 }
 .radio_button {
-    @apply w-[328px] flex items-center gap-3;
+    @apply w-328 flex items-center gap-3;
     @media (min-width: 768px) {
-        width: 380px;
+        @apply w-380;
+
     }
     .radio_button_input {
         @apply relative w-5 h-5 outline-none appearance-none;
         &::before {
-            @apply absolute content-[''] top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-5 h-5 rounded-full border border-inputBorder bg-none;
+            @apply absolute content-empty top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 rounded-full border border-inputBorder bg-none;
         }
         &:checked::before {
             @apply border-blue
         }
         &::after {
-            @apply absolute content-[''] top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-2.5 h-2.5 rounded-full bg-inputBorder;
+            @apply absolute content-empty top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2.5 h-2.5 rounded-full bg-inputBorder;
         }
         &:checked::after {
             @apply bg-blue;
@@ -62,15 +63,15 @@
         @apply hidden;
     }
     .fileUploadLabel {
-        @apply w-[83px] h-[54px] flex items-center justify-center rounded-bl-[4px] rounded-tl-[4px] border border-black;
+        @apply w-83 h-54 flex items-center justify-center rounded-bl rounded-tl border border-black;
     }
     .file_upload_description {
-        @apply inline-block relative w-[254px] h-[54px] rounded-br rounded-tr border border-inputBorder text-inputColor overflow-hidden;
+        @apply inline-block relative w-254 h-54 rounded-br rounded-tr border border-inputBorder text-inputColor overflow-hidden;
         @media (min-width: 768px) {
-            width: 297px;
+            @apply w-297;
         }
         span {
-            @apply m-0 pl-4 absolute top-1/2 translate-y-1/2
+            @apply m-0 pl-4 absolute top-1/2 -translate-y-1/2
         }
         .file {
             @apply text-black truncate w-full;
