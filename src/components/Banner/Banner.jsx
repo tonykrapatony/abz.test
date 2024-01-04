@@ -12,11 +12,11 @@ export default function Banner() {
     <div className={styles.banner}>
       <div className={styles.img_wrapper}>
         <picture>
-            <source srcSet={banner360} media="(max-width: 360px)" />
-            <source srcSet={banner768} media="(max-width: 768px)" />
-            <source srcSet={banner1024} media="(max-width: 1024px)" />
-            <source srcSet={banner1170} media="(max-width: 1170px)" />
-            <img src={banner1170} alt="Banner" />
+            <source srcSet={banner360} media="(max-width: 360px)" width='360' height='500'/>
+            <source srcSet={banner768} media="(max-width: 768px)" width='768' height='500'/>
+            <source srcSet={banner1024} media="(max-width: 1024px)" width='1024' height='650'/>
+            <source srcSet={banner1170} media="(max-width: 1170px)" width='1170' height='650'/>
+            <img src={banner1170} alt="Banner" width='1170' height='650'/>
         </picture>
       </div>
       <div className={styles.banner_content}>

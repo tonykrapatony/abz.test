@@ -18,10 +18,10 @@ export default function UsersRegistration({ setData }) {
                     />
                 </>
             }
-            {successRegistration && 
+            {!successRegistration && 
                 <>
                     <h1>User successfully registered</h1>
-                    <img src={success_image} alt="success_image" />
+                    <img src={success_image} alt="success_image" width='328' height='290'/>
                 </>
             }
         </section>

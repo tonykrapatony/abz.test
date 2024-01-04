@@ -6,7 +6,7 @@ export default function User({ item }) {
     return (
         <li className={styles.user_item}>
             <div className={styles.img_wrapper}>
-                <img src={item.photo} alt={item.name} />
+                <img src={item.photo} alt={item.name} width='70' height='70'/>
             </div>
             <p className={styles.name}>{item.name}</p>
             <div className={styles.info}>
