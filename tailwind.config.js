@@ -43,6 +43,9 @@ module.exports = {
       },
       width: {
         '104px': '104px',
+      },
+      borderRadius: {
+        '10px': '10px',
       }
     },
     corePlugins: {

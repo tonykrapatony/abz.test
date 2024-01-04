@@ -1,5 +1,5 @@
 .user_item {
-    @apply max-w-[328px] w-full flex flex-col items-center gap-[20px] p-[20px] text-black bg-white rounded-[10px];
+    @apply max-w-[328px] w-full flex flex-col items-center gap-[20px] p-[20px] text-black bg-white rounded-10px;
     @media (min-width: 768px) {
         @apply max-w-[344px] mx-0;
     }
