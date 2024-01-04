@@ -1,0 +1,24 @@
+.banner {
+    @apply relative w-full;
+    .img_wrapper {
+        @apply absolute top-0 left-0 w-full h-full z-[-1];
+        img {
+            @apply h-full w-full
+        }
+    }
+    .banner_content {
+        @apply flex flex-col items-center gap-[32px] pt-[40px] pb-[71px] bg-none;
+        @media (min-width: 768px) {
+            @apply pt-[89px] pb-[88px];
+        }
+        @media (min-width: 1024px) {
+            @apply pt-[164px] pb-[163px];
+        }
+        .text_content {
+            @apply w-[328px] flex flex-col items-center gap-[21px] text-white text-center;
+            @media (min-width: 768px) {
+                @apply w-[380px];
+            }
+        }
+    }
+}

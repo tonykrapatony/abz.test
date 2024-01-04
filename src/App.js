@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import './App.scss';
+import Banner from './components/Banner/Banner';
+import Header from './components/Header/Header';
+import MainContainer from './components/MainContainer/MainContainer';
+import Users from './components/Users/Users';
+import UsersRegistration from './components/UsersRegistration/UsersRegistration';
 
 function App() {
+  const [data, setData] = useState([]);
+  const [page, setPage] = useState(1);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <MainContainer>
+        <Banner />
+        <Users data={data} setData={setData} page={page} setPage={setPage} />
+        <UsersRegistration setData={setData}/>
+      </MainContainer>
     </div>
   );
 }

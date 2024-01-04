@@ -1,0 +1,33 @@
+.user_item {
+    @apply max-w-[328px] w-full flex flex-col items-center gap-[20px] p-[20px] text-black bg-white rounded-[10px];
+    @media (min-width: 768px) {
+        @apply max-w-[344px] mx-0;
+    }
+    @media (min-width: 1024px) {
+        @apply max-w-[282px];
+    }
+    @media (min-width: 1024px) {
+        @apply max-w-[282px];
+    }
+    @media (min-width: 1290px) {
+        @apply max-w-[370px];
+    }
+    .name {
+        @apply w-full truncate text-center;
+    }
+    .img_wrapper {
+        @apply w-[70px] h-[70px] rounded-[50%] overflow-hidden;
+        img {
+            @apply w-full h-full;
+        }
+    }
+    .info {
+        @apply w-full flex flex-col items-center;
+        .position, .phone {
+            @apply w-full truncate text-center;
+        }
+        .email {
+            @apply relative;
+        }
+    }
+}

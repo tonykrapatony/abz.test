@@ -1,0 +1,18 @@
+.navbar {
+    @apply flex justify-between items-center px-4 py-[13px];
+    @media (min-width: 768px) {
+        @apply px-8;
+    }
+    @media (min-width: 1024px) {
+        @apply px-[60px];
+    }
+    @media (min-width: 1290px) {
+        @apply max-w-[1170px] px-0 mx-auto;
+    }
+    .logo {
+        @apply w-[104px] h-[26px];
+    }
+    .actions {
+        @apply flex justify-between items-center gap-[10px];
+    }
+}

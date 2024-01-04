@@ -1,0 +1,88 @@
+.text_input {
+    @apply relative;
+    input::placeholder {
+        opacity: 0;
+    }
+    .input {
+        @apply w-[328px] h-[54px] py-[14px] pl-4 bg-lightGray border border-inputBorder rounded outline-none;
+        &.input_error {
+            @apply border-error border-[2px];
+        }
+        &:focus + .label {
+            @apply top-0 p-[5px] bg-lightGray text-sm leading-[14px];
+        }
+        &:not(:placeholder-shown) + label {
+            @apply top-0 bg-lightGray text-sm leading-[14px] p-[5px];
+        }
+        @media (min-width: 768px) {
+            @apply  w-[380px];
+        }
+    }
+    .label {
+        @apply absolute left-[10px] top-[50%] pl-[6px] translate-y-[-50%] text-inputColor;
+        &.label_error {
+            @apply text-error;
+        }
+    }
+    .helper_text {
+        @apply absolute top-full left-0 pl-4 text-inputColor text-sm leading-[14px];
+        &.helper_text_error {
+            @apply text-error;
+        }
+    }
+}
+.radio_button {
+    @apply w-[328px] flex items-center gap-3;
+    @media (min-width: 768px) {
+        @apply  w-[380px];
+    }
+    .radio_button_input {
+        @apply relative w-[20px] h-[20px] outline-none appearance-none;
+        &::before {
+            @apply absolute content-[''] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[20px] h-[20px] rounded-[50%] border border-inputBorder bg-none;
+        }
+        &:checked::before {
+            @apply border-blue
+        }
+        &::after {
+            @apply absolute content-[''] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[10px] h-[10px] rounded-[50%] bg-inputBorder;
+        }
+        &:checked::after {
+            @apply bg-blue;
+        }
+    }
+    .radio_button_label {
+        @apply text-black
+    }
+}
+
+.file_upload {
+    @apply flex relative;
+    .file_upload_input {
+        @apply hidden;
+    }
+    .fileUploadLabel {
+        @apply w-[83px] h-[54px] flex items-center justify-center rounded-bl-[4px] rounded-tl-[4px] border border-black;
+    }
+    .file_upload_description {
+        @apply inline-block relative w-[254px] h-[54px] rounded-br-[4px] rounded-tr-[4px] border border-inputBorder text-inputColor overflow-hidden;
+        @media (min-width: 768px) {
+            @apply  w-[297px];
+        }
+        span {
+            @apply m-0 pl-4 absolute top-[50%] translate-y-[-50%]
+        }
+        .file {
+            @apply text-black truncate w-full;
+        }
+    }
+    .helper_text_error {
+        @apply absolute text-sm top-full left-0 pl-4 text-error;
+    }
+    .error_description {
+        @apply border-error border-[2px];
+    }
+    .error_label {
+        @apply border-error border-[2px];
+    }
+}
