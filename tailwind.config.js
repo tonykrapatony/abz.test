@@ -75,7 +75,7 @@ module.exports = {
         '140': '140px',
       },
       content: {
-        'empty': '',
+        'empty': '""',
       },
     },
     corePlugins: {

@@ -63,15 +63,15 @@
         @apply hidden;
     }
     .fileUploadLabel {
-        @apply w-83 h-54 flex items-center justify-center rounded-bl rounded-tl border border-black;
+        @apply w-[83px] h-[54px] flex items-center justify-center rounded-bl-[4px] rounded-tl-[4px] border border-black;
     }
     .file_upload_description {
-        @apply inline-block relative w-254 h-54 rounded-br rounded-tr border border-inputBorder text-inputColor overflow-hidden;
+        @apply inline-block relative w-[254px] h-[54px] rounded-br rounded-tr border border-inputBorder text-inputColor overflow-hidden;
         @media (min-width: 768px) {
-            @apply w-297;
+            width: 297px;
         }
         span {
-            @apply m-0 pl-4 absolute top-1/2 -translate-y-1/2
+            @apply m-0 pl-4 absolute top-1/2 translate-y-1/2
         }
         .file {
             @apply text-black truncate w-full;
