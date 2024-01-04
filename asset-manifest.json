@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/abz.test/static/css/main.ee8ce350.css",
+    "main.css": "/abz.test/static/css/main.398bc48f.css",
     "main.js": "/abz.test/static/js/main.2eb49b3e.js",
     "static/js/787.0fb23ad5.chunk.js": "/abz.test/static/js/787.0fb23ad5.chunk.js",
     "static/media/banner1170.png": "/abz.test/static/media/banner1170.5fff95b28b2b73999698.png",
@@ -11,12 +11,12 @@
     "static/media/Logo.svg": "/abz.test/static/media/Logo.8bb55362d01d55393ccc5476d96f0c14.svg",
     "static/media/Preloader.svg": "/abz.test/static/media/Preloader.0aaf07f39acaa32ce036564ce35dba88.svg",
     "index.html": "/abz.test/index.html",
-    "main.ee8ce350.css.map": "/abz.test/static/css/main.ee8ce350.css.map",
+    "main.398bc48f.css.map": "/abz.test/static/css/main.398bc48f.css.map",
     "main.2eb49b3e.js.map": "/abz.test/static/js/main.2eb49b3e.js.map",
     "787.0fb23ad5.chunk.js.map": "/abz.test/static/js/787.0fb23ad5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee8ce350.css",
+    "static/css/main.398bc48f.css",
     "static/js/main.2eb49b3e.js"
   ]
 }
