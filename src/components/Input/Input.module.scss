@@ -43,7 +43,7 @@
             @apply absolute content-empty top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 rounded-full border border-inputBorder bg-none;
         }
         &:checked::before {
-            @apply border-blue
+            @apply border-blue;
         }
         &::after {
             @apply absolute content-empty top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2.5 h-2.5 rounded-full bg-inputBorder;
@@ -53,7 +53,7 @@
         }
     }
     .radio_button_label {
-        @apply text-black
+        @apply text-black;
     }
 }
 
@@ -63,15 +63,15 @@
         @apply hidden;
     }
     .fileUploadLabel {
-        @apply w-[83px] h-[54px] flex items-center justify-center rounded-bl-[4px] rounded-tl-[4px] border border-black;
+        @apply w-83 h-54 flex items-center justify-center rounded-bl rounded-tl border border-black;
     }
     .file_upload_description {
-        @apply inline-block relative w-[254px] h-[54px] rounded-br rounded-tr border border-inputBorder text-inputColor overflow-hidden;
+        @apply inline-block relative w-254 h-54 rounded-br rounded-tr border border-inputBorder text-inputColor overflow-hidden;
         @media (min-width: 768px) {
-            width: 297px;
+            @apply w-297;
         }
         span {
-            @apply m-0 pl-4 absolute top-1/2 translate-y-1/2
+            @apply m-0 pl-4 absolute top-1/2 -translate-y-1/2
         }
         .file {
             @apply text-black truncate w-full;
