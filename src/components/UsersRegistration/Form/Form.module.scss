@@ -1,7 +1,7 @@
 .registration_form {
     @apply w-full flex flex-col items-center gap-[50px];
     .radio_button_block {
-        @apply flex flex-col gap-[7px] items-start;
+        @apply flex flex-col gap-[7px] items-start mt-[-7px];
         p {
             @apply pb-0.5;
         }
