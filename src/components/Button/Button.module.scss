@@ -1,5 +1,5 @@
 .btn {
-    @apply min-w-[100px] h-[34px] rounded-[80px] py-[4px] pl-[19px] pr-[18px] whitespace-nowrap leading-[26px] bg-primary text-black hover:bg-primaryHover disabled:bg-gray disabled:text-white;
+    @apply min-w-[100px] h-[34px] rounded-[80px] py-[4px] pl-[19px] pr-[18px] whitespace-nowrap leading-26 bg-primary text-black hover:bg-primaryHover disabled:bg-gray disabled:text-white;
     &.hide {
         @apply hidden;
     }

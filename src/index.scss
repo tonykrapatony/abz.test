@@ -19,9 +19,9 @@ body {
 }
 
 h1, h2 {
-  @apply text-[40px] leading-[40px]; 
+  @apply text-lg leading-40; 
 }
 
 p {
-  @apply text-[16px] leading-[26px]; 
+  @apply text-md leading-26; 
 }

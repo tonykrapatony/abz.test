@@ -1,12 +1,12 @@
 .registration_container {
-    @apply mt-[140px] flex flex-col items-center gap-[50px] mb-[100px];
+    @apply mt-[140px] gap-[50px] mb-[100px] flex flex-col items-center;
     h1 {
         @apply max-w-[328px] mx-auto text-center text-black;
         @media (min-width: 768px) {
-            @apply  max-w-[704px];
+            max-width: 704px;
         }
         @media (min-width: 1024px) {
-            @apply  max-w-[904px];
+            max-width: 904px;
         }
     }
 }

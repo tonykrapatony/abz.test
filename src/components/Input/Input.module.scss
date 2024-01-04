@@ -6,16 +6,16 @@
     .input {
         @apply w-[328px] h-[54px] py-[14px] pl-4 bg-lightGray border border-inputBorder rounded outline-none;
         &.input_error {
-            @apply border-error border-[2px];
+            @apply border-error border-2;
         }
         &:focus + .label {
-            @apply top-0 p-[5px] bg-lightGray text-sm leading-[14px];
+            @apply top-0 p-[5px] bg-lightGray leading-14 text-sm;
         }
         &:not(:placeholder-shown) + label {
-            @apply top-0 bg-lightGray text-sm leading-[14px] p-[5px];
+            @apply top-0 leading-14 p-[5px] bg-lightGray text-sm;
         }
         @media (min-width: 768px) {
-            @apply  w-[380px];
+            width: 380px;
         }
     }
     .label {
@@ -25,7 +25,7 @@
         }
     }
     .helper_text {
-        @apply absolute top-full left-0 pl-4 text-inputColor text-sm leading-[14px];
+        @apply absolute top-full left-0 pl-4 text-inputColor leading-14 text-sm;
         &.helper_text_error {
             @apply text-error;
         }
@@ -34,18 +34,18 @@
 .radio_button {
     @apply w-[328px] flex items-center gap-3;
     @media (min-width: 768px) {
-        @apply  w-[380px];
+        width: 380px;
     }
     .radio_button_input {
-        @apply relative w-[20px] h-[20px] outline-none appearance-none;
+        @apply relative w-5 h-5 outline-none appearance-none;
         &::before {
-            @apply absolute content-[''] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[20px] h-[20px] rounded-[50%] border border-inputBorder bg-none;
+            @apply absolute content-[''] top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-5 h-5 rounded-full border border-inputBorder bg-none;
         }
         &:checked::before {
             @apply border-blue
         }
         &::after {
-            @apply absolute content-[''] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[10px] h-[10px] rounded-[50%] bg-inputBorder;
+            @apply absolute content-[''] top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] w-2.5 h-2.5 rounded-full bg-inputBorder;
         }
         &:checked::after {
             @apply bg-blue;
@@ -65,12 +65,12 @@
         @apply w-[83px] h-[54px] flex items-center justify-center rounded-bl-[4px] rounded-tl-[4px] border border-black;
     }
     .file_upload_description {
-        @apply inline-block relative w-[254px] h-[54px] rounded-br-[4px] rounded-tr-[4px] border border-inputBorder text-inputColor overflow-hidden;
+        @apply inline-block relative w-[254px] h-[54px] rounded-br rounded-tr border border-inputBorder text-inputColor overflow-hidden;
         @media (min-width: 768px) {
-            @apply  w-[297px];
+            width: 297px;
         }
         span {
-            @apply m-0 pl-4 absolute top-[50%] translate-y-[-50%]
+            @apply m-0 pl-4 absolute top-1/2 translate-y-1/2
         }
         .file {
             @apply text-black truncate w-full;
@@ -80,9 +80,9 @@
         @apply absolute text-sm top-full left-0 pl-4 text-error;
     }
     .error_description {
-        @apply border-error border-[2px];
+        @apply border-error border-2;
     }
     .error_label {
-        @apply border-error border-[2px];
+        @apply border-error border-2;
     }
 }

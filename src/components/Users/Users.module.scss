@@ -1,5 +1,5 @@
 .users_container {
-    @apply mt-[140px] flex flex-col items-center gap-[50px];
+    @apply mt-[140px] flex flex-col gap-[50px] items-center;
     h1 {
         @apply max-w-[328px] mx-auto text-center text-black;
         @media (min-width: 768px) {
@@ -10,12 +10,12 @@
         }
     }
     .users_list {
-        @apply w-full flex flex-col items-center gap-[20px];
+        @apply w-full flex flex-col items-center gap-5;
         @media (min-width: 768px) {
             @apply flex-row flex-wrap justify-center gap-4;
         }
         @media (min-width: 1024px) {
-            @apply gap-[29px];
+            gap: 29px;
         }
     }
 }

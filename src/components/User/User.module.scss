@@ -4,19 +4,16 @@
         @apply max-w-[344px] mx-0;
     }
     @media (min-width: 1024px) {
-        @apply max-w-[282px];
-    }
-    @media (min-width: 1024px) {
-        @apply max-w-[282px];
+        max-width: 282px;
     }
     @media (min-width: 1290px) {
-        @apply max-w-[370px];
+        max-width: 370px;
     }
     .name {
         @apply w-full truncate text-center;
     }
     .img_wrapper {
-        @apply w-[70px] h-[70px] rounded-[50%] overflow-hidden;
+        @apply w-[70px] h-[70px] rounded-full overflow-hidden;
         img {
             @apply w-full h-full;
         }
